@@ -15,8 +15,9 @@ def click(): #новое окно после того как нажмём нач
     window.title("Игра 'Камень-ножницы-бумага'")
     window.geometry("800x600")
     window.resizable(False,False)
-
     #МАТВЕЙ!!! Теперь мы обязательно работаем только в этом окне, так как предудыщее окно закрыыто
+
+    values = ["Камень", "Ножницы", "Бумага"]
 
 btn_start = ttk.Button(text="Начать игру", command=click)
 btn_start.place(relx=.5, rely=.5, anchor = "center", height= 80, width = 160)
